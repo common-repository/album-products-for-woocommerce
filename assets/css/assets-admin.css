@@ -1,0 +1,182 @@
+#woocommerce-product-data ul.wc-tabs li.album_tab a:before, #woocommerce-product-data ul.wc-tabs li.variable_album_tab a:before{
+	content: '';
+	background-image: url('/wp-content/plugins/album-products/assets/img/album.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+}
+#woocommerce-product-data ul.wc-tabs li.album_tab a:before, #woocommerce-product-data ul.wc-tabs li.variable_album_tab.active a:before{
+    background-image: url('/wp-content/plugins/album-products/assets/img/album_active.svg');
+}
+.wap_files_wrapper{
+	border-top: 1px solid #ccc;
+    padding-top: 15px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.wap_files_label{
+	font-weight: bold;
+    margin-bottom: 15px;
+}
+.flex_box{
+	display: flex;
+    align-items: center;
+}
+.flex_box .form-field{
+	margin: 0;
+	flex: 1;
+}
+.wap_media_contents table td{
+    padding: 5px 15px;
+}
+.generate_button{
+    position: relative;
+}
+.generate_button.requesting:before{ 
+    content: '';
+    background-image: url('/wp-admin/images/spinner-2x.gif');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 18px;
+    background-position: center;
+    background-color: #f3f3f3;
+}
+#album_product_options .options_group{
+	padding: 15px;
+}
+#album_product_options p.form-field{
+	padding: 0 10px!important;
+}
+#album_product_options p.form-field label{
+	float: none;
+	width: 100%;
+	margin: 0;
+}
+#album_product_options p.form-field input{
+	float: none;
+	width: 100%;
+}
+.variation_inner_wrapper{
+    display: none;
+}
+.variation_wrapper{
+    border-bottom: 1px solid #cccc;
+}
+.variation_wrapper h3{
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0;
+    line-height: 2.4;
+    padding: .5em .75em .5em 1em!important;
+    display: flex;
+    justify-content: space-between;
+}
+.variation_wrapper h3 .tack_title{
+    -ms-flex: 0 0 51%;
+    flex: 0 0 51%;
+    max-width: 51%;
+}
+.tracks_wrapper{
+    margin-top: 30px;
+    border-top: 1px solid #cccc;
+    margin-bottom: 40px;
+}
+.tracks_wrapper{
+
+}
+.tracks_buttons{
+    padding: 0 20px;
+}
+.variation_inner_wrapper{
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #cccc;
+}
+.woocommerce_options_panel .variation_inner_wrapper p.form-field{
+    -ms-flex: 0 0 50%;
+    padding: 5px 9px!important;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.woocommerce_options_panel .variation_inner_wrapper p.form-field label{
+    margin: 0;
+}
+.variation_inner_wrapper .wap_include_file .track_checkbox{
+    margin-left: 40px;
+}
+.variation_inner_wrapper .track_checkbox{
+    border: 1px solid #cccc;
+    border-left: 0;
+    border-right: 0;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+}
+.variation_inner_wrapper .track_checkbox label{
+    float: none;
+    margin: 0;
+}
+.variation_inner_wrapper .track_checkbox label input{
+    float: none;
+    margin: 0 0 4px!important;
+}
+#album_variable_product_options{
+    padding-bottom: 20px;
+    position: relative;
+}
+#album_variable_product_options:before{
+    content: '';
+    background-color: #fff;
+    background-image: url(/wp-content/plugins/woocommerce/assets/images/select2-spinner.gif);
+    display: block;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    height: 100%;
+    z-index: 100;
+    opacity: .0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+#album_variable_product_options.requesting:before{
+    visibility: visible;
+    opacity: .8;
+}
+.open_track_wrapper:before{
+    content: '\f142'!important;
+    cursor: pointer;
+    display: inline-block;
+    font: 400 20px/1 Dashicons;
+    line-height: .9!important;
+    padding: 8px 10px;
+    position: relative;
+    right: 12px;
+    top: 0;
+}
+.closed .open_track_wrapper:before{
+    content: '\f140'!important;
+}
+.track_wrapper_actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.track_wrapper_actions .remove_this_track{
+    color: red;
+    font-size: 12px;
+}
+.track_wrapper_actions .remove_this_track:hover{
+    color: #2196f3;
+}
+.no_media_added{
+    color: #8c8c8c;
+    font-size: 10px;
+    margin-left: 30px;
+}
